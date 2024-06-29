@@ -110,7 +110,7 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4                    &trans          &trans          &trans           &trans                &trans                 &trans
-&trans      &kp INS       &kp PSCRN     &out OUT_TOG  &out OUT_USB     &out OUT_TOG                    &kp PG_UP       &trans          &kp UP           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans      &kp INS       &kp PSCRN     &out OUT_BLE  &out OUT_USB     &out OUT_TOG                    &kp PG_UP       &trans          &kp UP           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans      &kp EQUAL     &kp PLUS      &kp MINUS     &kp KP_MULTIPLY  &kp KP_SLASH                    &kp MINUS       &kp UP_ARROW    &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BSPC
 &trans      &to 5         &to 4         &to 1         &to 0            &to 3         &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
                           &trans        &trans        &trans           &trans        &trans    &trans  &trans          &trans          &trans           &trans

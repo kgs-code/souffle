@@ -19,8 +19,6 @@ jobs:
           matrix=$(yaml2json build.yaml | jq -c .)
           echo "matrix=${matrix}" >> $GITHUB_ENV
           echo "::set-output name=matrix::${matrix}"
-      - name: Print matrix
-        run: echo "Matrix: $matrix"
 
   build:
     runs-on: ubuntu-latest

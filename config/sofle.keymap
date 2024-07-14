@@ -350,9 +350,9 @@
 
             bindings = <
 &kp TILDE      &kp F1         &kp F2        &kp F3        &kp F4        &kp F5                          &kp F6          &kp F7          &kp F8           &kp F9           &kp F10    &kp F11
-&kp LS(LG(S))  &symbol201502  &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                       &kp N6          &kp N7          &kp N8           &kp N9           &kp N0     &kp F12
-&trans         &symbol_home   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0                    &kp MINUS       &kp UP_ARROW    &kp PLUS         &kp KP_MULTIPLY  &kp SEMI   &kp APOS
-&trans         &mail          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp COLON        &kp TILDE  &kp GRAVE
+&kp LS(LG(S))  &MAIL          &kp N7        &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                       &kp N6          &kp N7          &kp N8           &kp N9           &kp N0     &kp F12
+&trans         &MAIL          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0                    &kp MINUS       &kp UP_ARROW    &kp PLUS         &kp KP_MULTIPLY  &kp SEMI   &kp APOS
+&trans         &MAIL          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp COLON        &kp TILDE  &kp GRAVE
                               &trans        &trans        &trans        &trans        &trans    &trans  &trans          &trans          &trans           &trans
             >;
 

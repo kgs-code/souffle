@@ -382,10 +382,10 @@
 
         layer_3 {
             bindings = <
+&trans         &trans         &trans         &trans         &trans         &trans                           &trans      &trans      &trans      &trans      &trans      &trans
 &kp LS(LA(N))  &kp LS(LA(W))  &kp LS(LA(R))  &kp LS(LA(E))  &kp LS(LA(A))  &kp LS(LA(Z))                    &symbol_1   &symbol_2   &symbol_3   &symbol_4   &symbol_5   &symbol_6
-&kp LS(LA(N))  &kp LS(LA(W))  &kp LS(LA(R))  &kp LS(LA(E))  &kp LS(LA(A))  &kp LS(LA(Z))                    &symbol_11  &symbol_12  &symbol_7   &symbol8    &symbol_9   &symbol_10
-&kp LS(LC(L))  &kp LS(LC(C))  &kp LS(LC(R))  &kp LC(B)      &kp LS(LA(S))  &kp LS(LA(P))                    &symbol_13  &symbol_14  &symbol_15  &symbol_16  &symbol_17  &symbol_18
-&kp LC(Z)      &kp LC(LS(Z))  &kp LA(C)      &kp F5         &trans         &kp F5         &trans    &trans  &trans      &trans      &trans      &trans      &trans      &trans
+&kp LS(LC(L))  &kp LS(LC(C))  &kp LS(LC(R))  &kp LC(B)      &kp LS(LA(S))  &kp LS(LA(P))                    &symbol_11  &symbol_12  &symbol_7   &symbol8    &symbol_9   &symbol_10
+&kp LC(Z)      &kp LC(LS(Z))  &kp LA(C)      &kp F5         &trans         &kp F5         &trans    &trans  &symbol_13  &symbol_14  &symbol_15  &symbol_16  &symbol_17  &symbol_18
                               &trans         &trans         &trans         &trans         &trans    &trans  &trans      &trans      &trans      &trans
             >;
 
@@ -412,11 +412,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &to 2   &to 1                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &to 0   &to 4   &to 1   &to 2   &to 0   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &symbol_1p    &symbol_home  &out OUT_TOG                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &none   &out OUT_BLE  &kp UP        &out OUT_USB                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 4   &to 0   &kp LEFT      &kp DOWN      &kp RIGHT     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "5";

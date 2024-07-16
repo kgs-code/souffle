@@ -45,7 +45,7 @@
         };
 
         layer_4 {
-            bindings = <&to 4>;
+            bindings = <&to 2>;
             key-positions = <55 56>;
         };
 
@@ -246,14 +246,14 @@
             label = "SYMBOL8";
         };
 
-        symbol_201502: symbol_150056 {
+        symbol_201502: symbol_201502 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&kp N2 &kp N0 &kp N1 &kp N5 &kp N0 &kp N2>,
                 <&macro_wait_time 30>;
 
-            label = "SYMBOL_150056";
+            label = "SYMBOL_201502";
         };
 
         symbol_home: symbol_home {
@@ -298,7 +298,7 @@
             label = "WORK";
         };
 
-        symbol_1p: symbol_1p {
+        symbol_home_p: symbol_home_p {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -307,7 +307,7 @@
                 <&to 0>,
                 <&macro_wait_time 30>;
 
-            label = "SYMBOL_1P";
+            label = "SYMBOL_HOME_P";
         };
     };
 
@@ -349,11 +349,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp TILDE      &kp F1    &kp F2        &kp F3        &symbol_201502  &symbol_home                    &kp F6          &kp F7          &kp F8           &kp F9           &kp F10    &kp F11
-&kp LS(LG(S))  &a150056  &kp N7        &kp NUMBER_8  &kp NUMBER_9    &kp MINUS                       &kp N6          &kp N7          &kp N8           &kp N9           &kp N0     &kp F12
-&trans         &work     &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp NUMBER_0                    &kp MINUS       &kp UP_ARROW    &kp PLUS         &kp KP_MULTIPLY  &kp SEMI   &kp APOS
-&trans         &mail     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp PERIOD    &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp COLON        &kp TILDE  &kp GRAVE
-                         &trans        &trans        &trans          &trans        &trans    &trans  &trans          &trans          &trans           &trans
+&kp TILDE      &kp F1    &kp F2        &kp F3        &symbol_home_p  &symbol_201502                    &kp F6          &kp F7          &kp F8           &kp F9           &kp F10    &kp F11
+&kp LS(LG(S))  &a150056  &kp N7        &kp NUMBER_8  &kp NUMBER_9    &kp MINUS                         &kp N6          &kp N7          &kp N8           &kp N9           &kp N0     &kp F12
+&trans         &work     &kp NUMBER_4  &kp N5        &kp NUMBER_6    &kp NUMBER_0                      &kp MINUS       &kp UP_ARROW    &kp PLUS         &kp KP_MULTIPLY  &kp SEMI   &kp APOS
+&trans         &mail     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp PERIOD      &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp COLON        &kp TILDE  &kp GRAVE
+                         &trans        &trans        &trans          &trans          &trans    &trans  &trans          &trans          &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -412,11 +412,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &symbol_1p    &symbol_home  &out OUT_TOG                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &none   &out OUT_BLE  &kp UP        &out OUT_USB                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &to 4   &to 0   &kp LEFT      &kp DOWN      &kp RIGHT     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans          &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &symbol_home_p  &symbol_home  &out OUT_TOG                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &none   &out OUT_BLE    &kp UP        &out OUT_USB                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &to 4   &to 0   &kp LEFT        &kp DOWN      &kp RIGHT     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans          &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "5";

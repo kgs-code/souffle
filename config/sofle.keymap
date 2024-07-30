@@ -30,52 +30,51 @@
         tdQ: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             bindings = <&kp Q>, <&kp LS(Q)>;
         };
         tdW: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             bindings = <&kp W>, <&kp LS(W)>;
         };
         tdE: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp E>, <&kp LS(E>;
+            tapping-term-ms = <170>;
+            bindings = <&kp E>, <&kp LS(E)>;
         };
         tdR: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             bindings = <&kp R>, <&kp LS(R)>;
         };
         tdT: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             bindings = <&kp T>, <&kp LS(T)>;
         };
         tdO: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             bindings = <&kp O>, <&kp LS(O)>;
         };
         tdP: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             bindings = <&kp P>, <&kp LS(P)>;
         };
         tdSL: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <170>;
             bindings = <&kp FSLH>, <&kp LS(FSLH)>;
         };
-
     };
 
     combos {

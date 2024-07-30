@@ -13,7 +13,19 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+
+
+#define BASE 0
+#define LOWER 1
+#define RAISE 2
+#define ADJUST 3
+
 / {
+    // Activate ADJUST layer by pressing raise and lower
+
+    conditional_layers { compatible = "zmk,conditional-layers"; };
+
+    
     behaviors {
         tdQ: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -65,18 +77,6 @@
         };
 
     };
-};
-
-
-#define BASE 0
-#define LOWER 1
-#define RAISE 2
-#define ADJUST 3
-
-/ {
-    // Activate ADJUST layer by pressing raise and lower
-
-    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";

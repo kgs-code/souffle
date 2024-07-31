@@ -75,6 +75,66 @@
             tapping-term-ms = <170>;
             bindings = <&kp FSLH>, <&kp LS(FSLH)>;
         };
+        td1: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp Q>, <&kp LS(Q)>;
+        };
+        td2: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp W>, <&kp LS(W)>;
+        };
+        td3: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp E>, <&kp LS(E)>;
+        };
+        td4: tap_dance_4 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp R>, <&kp LS(R)>;
+        };
+        td5: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp T>, <&kp LS(T)>;
+        };
+        td6: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp O>, <&kp LS(O)>;
+        };
+        td7: tap_dance_7 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp P>, <&kp LS(P)>;
+        };
+        td8: tap_dance_8 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp FSLH>, <&kp LS(FSLH)>;
+        };
+        td9: tap_dance_9 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp FSLH>, <&kp LS(FSLH)>;
+        };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&kp FSLH>, <&kp LS(FSLH)>;
+        };
     };
 
     combos {
@@ -381,7 +441,7 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE               &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                 &kp N6     &kp N7    &kp N8     &kp N9     &kp N0    &kp BACKSPACE
+&kp ESCAPE               &td1  &td2    &td3    &td4     &td5                                           &td6       &td7      &td8       &td9       &td0      &kp BACKSPACE
 &kp TAB                  &tdQ    &tdW      &tdE      &tdR       &tdT                                   &kp Y      &kp U     &kp I      &tdO       &tdP      &kp APOSTROPHE
 &mt LEFT_SHIFT CAPS      &kp A   &kp S     &kp D     &kp F      &kp G                                  &kp H      &kp J     &kp K      &kp L      &kp SEMI  &kp ENTER
 &mt LEFT_SHIFT CAPSLOCK  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &out OUT_TOG  &kp N      &kp M     &kp COMMA  &kp DOT    &tdSL      &kp RSHFT
